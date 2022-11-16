@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #384047;
+    background-color: #dbe5ee;
+    font-family: sans-serif;
+}
+form{
+    background-color: #ffff;
+}
+
+    </style>
+</head>
+<body>
+    <form action="/signup.js" method="post">
+        <h1>Signup Page</h1>
+        <fieldset>
+        <legend><span class="number">1</span>Your Basic Info</legend>
+        <label for="name">Name:</label>
+        <input type="text" name="" id="" placeholder="Enter Your Name">
+        <label for="email">Email:</label>
+        <input type="email" name="" id="" placeholder="Enter Your Email" required>
+        <label for="password">Password:</label>
+        <input type="password" name="" id="" placeholder="Enter Your Password" required>
+        <label for="">Age:</label>
+        <input type="radio" name="age" id="" value="Above 18">
+        <label for="Above 18" class="light">Above 18</label> <br>
+        <input type="radio" name="age" id="">
+        <label for="Below 18" class="light">Below 18</label>
+    </fieldset>
+    <fieldset>
+        <legend><span class="number">2</span>Your Profile</legend>
+        <label for="">Bio:</label>
+        <textarea name="user_bio" id="bio" rows="5" cols="5"></textarea>
+        <label for="">Job Role:</label>
+        <select name="" id="">
+            <optgroup label="Web">
+                <option value="Frontend_Developer">Frontend Developer</option>
+                <option value="Backend_Developer">Backend Developer</option>
+                <option value="Python_Developer">Python Developer</option>
+                <option value="Php_Developer">Php Developer</option>
+                <option value="rails_Developer">rails Developer</option>
+                <option value="web_desginer">Web Desginer</option>
+                <option value="Wordpress Developer">WordPress Developer</option>
+            </optgroup>
+            <optgroup label="Mobile">
+                <option value="Android_Developer">Android Developer</option>
+                <option value="ios_Developer">Ios Developer</option>
+                <option value="mobile_designer">Mobile Developer</option>
+            </optgroup>
+            <optgroup label="Bussiness">
+                <option value="bussiness_owner">Bussiness Owner</option>
+                <option value="freelancer">Freelancer</option>
+            </optgroup>
+        </select>
+        <label for="interest">Interest: </label>
+        <input type="checkbox" name="user_interest" id="devlopment">
+            <label class="light" for="Development">Development</label> <br>
+        <input type="checkbox" name="user_interest" id="desginer">
+            <label class="light" for="Development">Design</label> <br>
+        <input type="checkbox" name="user_interest" id="business">
+            <label class="light" for="Business">Business</label>
+    </fieldset>
+    <button class="submit">Sign Up</button>
+    </form>
+
+
+
+</body>
+</html>
